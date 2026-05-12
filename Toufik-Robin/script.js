@@ -2,26 +2,26 @@
    NAVBAR CLIQUABLE
 ========================= */
 
-      $(".").click(function () {
+      $(".navLink").click(function () {
         /*
         Active le lien
     */
 
-        $("").removeClass("");
-
-        $(this).addClass("");
+        $(".navLink").removeClass("activeNav");
+ 
+        $(this).addClass("activeNav");
 
         /*
         Récupère la page
     */
 
-        let page = $(this).data("");
+        let page = $(this).data("page");
 
         /*
         Cache toutes les pages
     */
 
-        $("").removeClass("").hide();
+        $(".page").removeClass("activePage").hide();
 
         /*
         Affiche la page cliquée
@@ -30,15 +30,15 @@
         $("#" + page)
           .fadeIn(500)
 
-          .addClass("");
+          .addClass("activePage");
       });
 
       /* =========================
    TOGGLE MENU
 ========================= */
 
-      $("").click(function () {
-        $("").animate(
+      $("#toggleMenu").click(function () {
+        $(".sidebar").animate(
           {
             width: "",
           },
@@ -51,7 +51,7 @@
 ========================= */
 
       $(".counter").each(function () {
-        let target = $(this).data("");
+        let target = $(this).data("target");
 
         let counter = $(this);
 
@@ -81,17 +81,17 @@
 ========================= */
 
       setInterval(function () {
-        $("")
+        $(".c1")
           .animate(
             {
-              top: "",
+              top: "60px",
             },
             1000,
           )
 
           .animate(
             {
-              top: "",
+              top: "20px",
             },
             1000,
           );
@@ -99,14 +99,14 @@
         $(".c2")
           .animate(
             {
-              right: "",
+              right: "250px",
             },
             1000,
           )
 
           .animate(
             {
-              right: "",
+              right: "180px",
             },
             1000,
           );
@@ -114,14 +114,14 @@
         $(".c3")
           .animate(
             {
-              left: "",
+              left: "100px",
             },
             1000,
           )
 
           .animate(
             {
-              left: "",
+              left: "40px",
             },
             1000,
           );
