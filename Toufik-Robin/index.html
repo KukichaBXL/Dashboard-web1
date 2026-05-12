@@ -81,11 +81,67 @@
 
         <section id="dashboardPage" class="page">
           <div class="fakePage">
-            <h2>Dashboard</h2>
-
+            <h2>Dashboard jQuery</h2>
             <br />
 
-            <p>Contenu du dashboard.</p>
+            <!-- Cartes -->
+            <div class="cartes">
+              <div class="carte">
+                <h3>Carte 1</h3>
+                <p>Animation jQuery</p>
+              </div>
+              <div class="carte">
+                <h3>Carte 2</h3>
+                <p>Manipulation DOM</p>
+              </div>
+              <div class="carte">
+                <h3>Carte 3</h3>
+                <p>Effets visuels</p>
+              </div>
+            </div>
+
+            <!-- Contrôles -->
+            <div class="controlesSection">
+              <h3>Contrôles</h3>
+              <div class="controlesButtons">
+                <button id="btn-lancer" class="btnControl">
+                  Lancer animation
+                </button>
+                <button id="btn-stop" class="btnControl">Stop animation</button>
+                <button id="btn-masquer" class="btnControl">
+                  Masquer galerie
+                </button>
+                <button id="btn-afficher" class="btnControl">
+                  Afficher galerie
+                </button>
+              </div>
+            </div>
+
+            <!-- Galerie -->
+            <div id="galerie" class="galerie">
+              <div id="box1"></div>
+              <div id="box2"></div>
+              <div id="box3"></div>
+              <div id="box4"></div>
+            </div>
+
+            <!-- Notification -->
+            <div>
+              <button id="btn-p" class="btnControl">
+                Afficher notification
+              </button>
+              <p id="paragraphe">lorem50</p>
+            </div>
+
+            <!-- Manipulation attr() -->
+            <div class="attrSection">
+              <h3>Manipulation attr()</h3>
+              <textarea id="champ" placeholder="Votre nom" rows="4"></textarea>
+              <div class="attrButtons">
+                <button id="btn-disable" class="btnControl">Disable</button>
+                <button id="btn-enable" class="btnControl">Enable</button>
+              </div>
+            </div>
           </div>
         </section>
 
