@@ -455,11 +455,11 @@
            TOGGLE MENU
         ========================= */
 
-        $("").click(function () {
+        $("#toggleMenu").click(function () {
 
-            $("").animate({
+            $(".sidebar").animate({
 
-                width: ""
+                width: "toggle"
 
             }, 500);
 
@@ -472,7 +472,7 @@
 
         $(".counter").each(function () {
 
-            let target = $(this).data("");
+            let target = $(this).data("target");
 
             let counter = $(this);
 
@@ -515,7 +515,7 @@
 
         setInterval(function () {
 
-            $("")
+            $(".")
 
                 .animate({
                     top: ""
